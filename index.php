@@ -2,29 +2,26 @@
 //start the session function 
 session_start();
 
-
-// create a pre defined username and password since we do not have database
 $acc_username = "ronjicuteasf";
 $acc_password = "bastard13erz";
 $acc_fullname = "Ronji Monsale";
 $acc_address = "Boac, Marinduque";
-//check the current url for redirections later
+
 $url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];  
 
-// condition to know if tge button is clicked
+
 if(isset($_REQUEST['login_button']) === true){
-	//get the user and username and password from the form and compare to the predefined username and password
-	//kapag mali agad yung username
+
 		if($_REQUEST['form_username'] !=$acc_username){
 				header("Location: ".$url_add."?notexist");
 			
 	}
-	//correct username but incorrect password
+
 	else if ($_REQUEST['form_username'] == $acc_username && $_REQUEST['form_password'] != $acc_password){
 		header("Location: ".$url_add."?wrongpass");
 	
 	}
-	//correct username and password
+
 	else if ($_REQUEST['form_username']==$acc_username && $_REQUEST['form_password'] == $acc_password){
 		header("Location: ".$url_add."?success");
 

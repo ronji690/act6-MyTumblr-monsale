@@ -20,7 +20,7 @@ if (isset($_SESSION['ses_username'])===false){
                             <head>
                                 <meta charset='utf-8'>
                                 <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>Portfolio Page</title>
+                                <title>Ronji Portfolio Page</title>
 
                                 <link href='css/bootstrap.min.css' rel='stylesheet'>
 
@@ -49,7 +49,7 @@ body {
         <div class="bg-white shadow rounded overflow-hidden">
             <div class="px-4 pt-0 pb-4 cover">
                 <div class="media align-items-end profile-head">
-                    <div class="profile mr-3"><img src="images/photo-profile.avif" alt="..." width="150" class="rounded mb-2 img-thumbnail">
+                    <div class="profile mr-3"><img src="images/ronji.jpg" alt="..." width="150" class="rounded mb-2 img-thumbnail">
 
                         <a href="?logout" class="btn btn-outline-dark btn-sm btn-block">Sign out</a>
 
@@ -80,8 +80,10 @@ body {
             <div class="px-4 py-3">
                 <h5 class="mb-0">Expertise </h5>
                 <div class="p-4 rounded shadow-sm bg-light">
-                    <p class="font-italic mb-0">Full-stack Web Developer</p>
-                    <p class="font-italic mb-0">Mobile App Developer</p>
+                    <p class="font-italic mb-0">Photoshop</p>
+                    <p class="font-italic mb-0">Creating and Managing Spread Sheets</p>
+                    <p class="font-italic mb-0">Working with word processing documents</p>
+                    <p class="font-italic mb-0">Photographer/Videographer</p>
                     <p class="font-italic mb-0">Photographer/Videographer</p>
                 </div>
             </div>
